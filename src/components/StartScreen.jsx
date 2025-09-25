@@ -10,7 +10,7 @@ import { LOGO_SRC } from "../constants";
  * Tweak TEXT_TITLE / TEXT_CREDIT below to your liking.
  */
 const TEXT_TITLE = ""; // e.g. "DIKW Sorter" (leave empty if your logo already contains text)
-const TEXT_CREDIT = "DIKW Sorter™ by Barış Çetin © "; // change or empty "" to hide
+const TEXT_CREDIT = "BiteBulbs by Barış Çetin"; // change or empty "" to hide
 
 export default function StartScreen({ onStart, onShuffle }) {
   return (
@@ -49,7 +49,13 @@ export default function StartScreen({ onStart, onShuffle }) {
             Start
           </button>
 
-
+          {/* keep Shuffle for convenience; comment out if you want a single Start button */}
+          <button
+            onClick={onShuffle}
+            className="px-8 py-3 rounded-full text-lg font-semibold border-2 border-slate-600 text-slate-200 hover:bg-slate-800/60 transition-colors"
+          >
+            Shuffle Items
+          </button>
         </div>
 
         {/* Credit (optional) */}

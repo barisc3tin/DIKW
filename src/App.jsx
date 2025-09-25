@@ -82,7 +82,6 @@ export default function App() {
     if (newScore > 60) setCelebrate(true);
   };
 
-  // --- Option B: Start screen wrapped with the same app shell
   if (!started) {
     return (
       <div className="min-h-screen flex flex-col bg-slate-900 text-slate-200 font-sans">

@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
-/* helpers used by the pyramid + feedback bubble */
-.pyramid-triangle{
+/* Triangle backdrop behind the DIKW pyramid */
+.pyramid-triangle {
   background: linear-gradient(180deg, rgba(148,163,184,0.25), rgba(148,163,184,0.08));
   clip-path: polygon(50% 2%, 95% 98%, 5% 98%);
   border: 2px solid rgba(148,163,184,0.35);
   box-shadow: 0 20px 40px rgba(0,0,0,0.35);
 }
-.bubble{
+
+/* Wrong-answer balloon shown after checking */
+.bubble {
   position: absolute;
   bottom: 100%;
   left: 50%;
@@ -23,7 +25,7 @@
   z-index: 5;
   box-shadow: 0 8px 16px rgba(0,0,0,0.35);
 }
-.bubble::after{
+.bubble::after {
   content: "";
   position: absolute;
   top: 100%;
