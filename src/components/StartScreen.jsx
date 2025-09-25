@@ -1,14 +1,6 @@
 import { LOGO_SRC } from "../constants";
 
-/**
- * Start screen styled like the bitebulbs example:
- * - Large centered logo (no stretching, object-contain) with a soft glow
- * - Minimal dark background
- * - Green outline Start button (rounded)
- * - Optional credit line under the button
- *
- * Tweak TEXT_TITLE / TEXT_CREDIT below to your liking.
- */
+
 const TEXT_TITLE = ""; // e.g. "DIKW Sorter" (leave empty if your logo already contains text)
 const TEXT_CREDIT = "DIKW Sorter by Barış Çetin"; // change or empty "" to hide
 
