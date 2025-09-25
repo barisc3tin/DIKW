@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* helpers used by the pyramid + feedback bubble */
+.pyramid-triangle{
+  background: linear-gradient(180deg, rgba(148,163,184,0.25), rgba(148,163,184,0.08));
+  clip-path: polygon(50% 2%, 95% 98%, 5% 98%);
+  border: 2px solid rgba(148,163,184,0.35);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+.bubble{
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, -6px);
+  background: #0b1220;
+  color: #e5e7eb;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 12px;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 5;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.35);
+}
+.bubble::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0; height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #475569;
+}
