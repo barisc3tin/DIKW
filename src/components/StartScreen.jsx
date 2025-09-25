@@ -10,7 +10,7 @@ import { LOGO_SRC } from "../constants";
  * Tweak TEXT_TITLE / TEXT_CREDIT below to your liking.
  */
 const TEXT_TITLE = ""; // e.g. "DIKW Sorter" (leave empty if your logo already contains text)
-const TEXT_CREDIT = "BiteBulbs by Barış Çetin"; // change or empty "" to hide
+const TEXT_CREDIT = "DIKW Sorter by Barış Çetin"; // change or empty "" to hide
 
 export default function StartScreen({ onStart, onShuffle }) {
   return (
